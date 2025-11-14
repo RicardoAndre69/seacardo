@@ -1,0 +1,107 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "process": "Process",
+    "contact": "Contact",
+    "search": "Search..."
+  },
+  "hero": {
+    "badge": "Export Best Quality...",
+    "title1": "Tasty",
+    "title2": "Meats",
+    "title3": "and Seafood",
+    "subtitle": "Bred for a high content of beneficial substances. Our products are all fresh and healthy.",
+    "button": "Shop Now"
+  },
+  "process": {
+    "highlight": "Our",
+    "heading": "Process",
+    "steps": {
+      "1": {
+        "title": "Sourcing",
+        "para": "It is a long established fact that a reader"
+      },
+      "2": {
+        "title": "Manufacturing",
+        "para": "It is a long established fact that a reader"
+      },
+      "3": {
+        "title": "Quality Control",
+        "para": "It is a long established fact that a reader"
+      },
+      "4": {
+        "title": "Logistics",
+        "para": "It is a long established fact that a reader"
+      }
+    }
+  },
+  "category": {
+    "highlight": "Shop",
+    "heading": "by Category",
+    "button": "See All",
+    "items": {
+      "1": {
+        "title": "Meat & Seafood",
+        "description": "High-quality, responsibly sourced meat and seafood. Choose from fresh cuts, marinated options, and more."
+      }
+    }
+  },
+  "values": {
+    "highlight": "Our",
+    "heading": "Values",
+    "items": {
+      "1": {
+        "title": "Trust",
+        "para": "We believe in transparency and commitment to our customers."
+      },
+      "2": {
+        "title": "Always Fresh",
+        "para": "Products selected daily for maximum quality."
+      },
+      "3": {
+        "title": "Food Safety",
+        "para": "Strict processes to ensure complete safety."
+      },
+      "4": {
+        "title": "100% Organic",
+        "para": "Natural products with no harmful chemical additives."
+      }
+    }
+  },
+  "products": {
+    "highlight": "Our",
+    "heading": "Products",
+    "tabs": {
+      "all": "All",
+      "meat": "Meat",
+      "seafood": "SeaFood"
+    },
+    "viewAll": "View All"
+  },
+  "discount": {
+    "title": "First Order Discount!",
+    "text": "Enjoy an exclusive first order discount on our grocery website! Shop fresh essentials and save big on your first purchase. Fast delivery and quality guaranteed.",
+    "button": "Get a Discount"
+  },
+  "footer": {
+    "description": "Bred for high quality and freshness. Our products are always healthy.",
+    "rights": "All rights reserved",
+    "company": {
+      "title": "Company",
+      "about": "About",
+      "faq": "FAQ's"
+    },
+    "support": {
+      "title": "Support",
+      "center": "Support Center",
+      "feedback": "Feedback",
+      "contact": "Contact Us"
+    },
+    "stay": {
+      "title": "Stay Connected",
+      "text": "Questions or feedback?\nWe'd love to hear from you.",
+      "placeholder": "Email Address"
+    }
+  }
+}

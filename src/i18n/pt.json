@@ -1,0 +1,107 @@
+{
+  "navbar": {
+    "home": "Início",
+    "about": "Sobre Nós",
+    "process": "Processo",
+    "contact": "Contato",
+    "search": "Pesquisar..."
+  },
+  "hero": {
+    "badge": "Exportando a melhor qualidade...",
+    "title1": "Carnes",
+    "title2": "e",
+    "title3": "Frutos do Mar",
+    "subtitle": "Criados para alto teor de substâncias benéficas. Nossos produtos são sempre frescos e saudáveis.",
+    "button": "Comprar Agora"
+  },
+  "process": {
+    "highlight": "Nosso",
+    "heading": "Processo",
+    "steps": {
+      "1": {
+        "title": "Coleta",
+        "para": "É um fato estabelecido há muito tempo que um leitor"
+      },
+      "2": {
+        "title": "Produção",
+        "para": "É um fato estabelecido há muito tempo que um leitor"
+      },
+      "3": {
+        "title": "Controle de Qualidade",
+        "para": "É um fato estabelecido há muito tempo que um leitor"
+      },
+      "4": {
+        "title": "Logística",
+        "para": "É um fato estabelecido há muito tempo que um leitor"
+      }
+    }
+  },
+  "category": {
+    "highlight": "Comprar",
+    "heading": "por Categoria",
+    "button": "Ver tudo",
+    "items": {
+      "1": {
+        "title": "Carnes e Frutos do Mar",
+        "description": "Carnes e frutos do mar de alta qualidade, obtidos de forma responsável. Escolha entre cortes frescos, opções marinadas e muito mais."
+      }
+    }
+  },
+  "products": {
+    "highlight": "Nossos",
+    "heading": "Produtos",
+    "tabs": {
+      "all": "Todos",
+      "meat": "Carnes",
+      "seafood": "Frutos do Mar"
+    },
+    "viewAll": "Ver Todos"
+  },
+  "values": {
+    "highlight": "Nossos",
+    "heading": "Valores",
+    "items": {
+      "1": {
+        "title": "Confiança",
+        "para": "Acreditamos em transparência e compromisso com nossos clientes."
+      },
+      "2": {
+        "title": "Sempre Fresco",
+        "para": "Produtos selecionados diariamente para máxima qualidade."
+      },
+      "3": {
+        "title": "Segurança Alimentar",
+        "para": "Processos rigorosos para garantir segurança total."
+      },
+      "4": {
+        "title": "100% Orgânico",
+        "para": "Produtos naturais e sem aditivos químicos prejudiciais."
+      }
+    }
+  },
+  "discount": {
+    "title": "Desconto no Primeiro Pedido!",
+    "text": "Aproveite um desconto exclusivo no primeiro pedido! Compre itens frescos e economize na sua primeira compra. Entrega rápida e qualidade garantida.",
+    "button": "Obter Desconto"
+  },
+  "footer": {
+    "description": "Criado para ter alta qualidade e frescor. Nossos produtos são sempre saudáveis.",
+    "rights": "Todos os direitos reservados",
+    "company": {
+      "title": "Empresa",
+      "about": "Sobre",
+      "faq": "FAQ's"
+    },
+    "support": {
+      "title": "Suporte",
+      "center": "Central de Suporte",
+      "feedback": "Feedback",
+      "contact": "Contato"
+    },
+    "stay": {
+      "title": "Fique Conectado",
+      "text": "Dúvidas ou feedback?\nAdoraríamos ouvir você.",
+      "placeholder": "Endereço de Email"
+    }
+  }
+}
