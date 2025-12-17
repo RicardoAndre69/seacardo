@@ -5,6 +5,8 @@ import SeaFood from './components/SeaFood/SeaFood'
 import AllProducts from './components/AllProducts/AllProducts'
 import Layout from './components/Layout/Layout'
 import Meats from './components/Meats/Meats'
+import Process from './components/Process/Process'
+import Contact from './components/Contact/Contact'
 
 const App = () => {
 
@@ -18,6 +20,10 @@ const App = () => {
           element: <Home />
         },
         {
+          path: '/process',
+          element: <Process />
+        },
+        {
           path: '/meats',
           element: <Meats />
         },
@@ -28,6 +34,10 @@ const App = () => {
         {
           path: '/allproducts',
           element: <AllProducts />
+        },
+        {
+          path: '/contact',
+          element: <Contact />
         }
       ]
     },

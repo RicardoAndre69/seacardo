@@ -52,6 +52,6 @@ const category = [
         title: "category.items.1.title",
         description: "category.items.1.description",
         image: SeaFoodCat,
-        path: "/seafood"
-    }
+        path: "/allproducts"
+    },
 ]

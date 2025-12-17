@@ -7,33 +7,28 @@ import { useTranslation } from "react-i18next"
 
 const Products = () => {
 
-    const { t } = useTranslation();
+    const { t } = useTranslation()
 
-    const categories = [
-        t("products.tabs.all"),
-        t("products.tabs.meat"),
-        t("products.tabs.seafood")
-    ];
+    const categories = ["all", "meat", "seafood"]
 
-    const [activeTab, setActiveTab] = useState(t("products.tabs.all"));
+    const [activeTab, setActiveTab] = useState("all")
 
-    let filteredItems =
-        activeTab === t("products.tabs.all")
+    const filteredItems =
+        activeTab === "all"
             ? ProductList
-            : ProductList.filter(item => item.category === activeTab);
+            : ProductList.filter(item => item.category === activeTab)
 
-    const renderCards = filteredItems.slice(0, 8).map(product => {
-        return (
-            <Cards 
-                image={product.image} 
-                title={product.name} 
-                price={product.price} 
-            />
-        )
-    })
+    const renderCards = filteredItems.slice(0, 8).map(product => (
+        <Cards
+            key={product.id}
+            image={product.image}
+            title={product.title}
+            price={product.price}
+        />
+    ))
 
     return (
-        <section>
+        <section >
             <div className='max-w-[1400px] mx-auto px-10 py-20'>
                 
                 <Heading 
@@ -43,20 +38,19 @@ const Products = () => {
 
                 {/* Tabs */}
                 <div className='flex flex-wrap gap-3 justify-center mt-10'>
-                    {categories.map(category => {
-                        return (
-                            <button 
-                                key={category}
-                                className={`px-5 py-2 text-lg rounded-lg cursor-pointer
-                                ${activeTab === category 
-                                    ? 'bg-gradient-to-b from-red-400 to-red-500 text-white' 
+                    {categories.map(category => (
+                        <button f
+                            key={category}
+                            className={`px-5 py-2 text-lg rounded-lg cursor-pointer
+                                ${activeTab === category
+                                    ? 'bg-gradient-to-b from-red-400 to-red-500 text-white'
                                     : 'bg-zinc-100'}`}
-                                onClick={() => setActiveTab(category)}
-                            >
-                                {category}
-                            </button>
-                        )
-                    })}
+                            onClick={() => setActiveTab(category)}
+                        >
+
+                            {t(`products.tabs.${category}`)}
+                        </button>
+                    ))}
                 </div>
 
                 {/* Product Listing */}
@@ -75,6 +69,7 @@ const Products = () => {
                         {t("products.viewAll")}
                     </Link>
                 </div>
+                
             </div>
         </section>
     )

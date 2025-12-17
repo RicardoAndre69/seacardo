@@ -11,6 +11,7 @@
     "title1": "Tasty",
     "title2": "Meats",
     "title3": "and Seafood",
+    "title4": "In Your City",
     "subtitle": "Bred for a high content of beneficial substances. Our products are all fresh and healthy.",
     "button": "Shop Now"
   },
@@ -83,6 +84,29 @@
     "title": "First Order Discount!",
     "text": "Enjoy an exclusive first order discount on our grocery website! Shop fresh essentials and save big on your first purchase. Fast delivery and quality guaranteed.",
     "button": "Get a Discount"
+  },
+  "contact": {
+    "highlight": "Get in",
+    "heading": "Touch",
+    "subtitle": "Contact us for questions, suggestions, or partnerships.",
+    "email": {
+      "title": "Email"
+    },
+    "phone": {
+      "title": "Phone"
+    },
+    "address": {
+      "title": "Address"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "message": "Message",
+      "messagePlaceholder": "Enter your message",
+      "button": "Send message"
+    }
   },
   "footer": {
     "description": "Bred for high quality and freshness. Our products are always healthy.",

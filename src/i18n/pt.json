@@ -11,6 +11,7 @@
     "title1": "Carnes",
     "title2": "e",
     "title3": "Frutos do Mar",
+    "title4": "Na Sua Cidade",
     "subtitle": "Criados para alto teor de substâncias benéficas. Nossos produtos são sempre frescos e saudáveis.",
     "button": "Comprar Agora"
   },
@@ -83,6 +84,29 @@
     "title": "Desconto no Primeiro Pedido!",
     "text": "Aproveite um desconto exclusivo no primeiro pedido! Compre itens frescos e economize na sua primeira compra. Entrega rápida e qualidade garantida.",
     "button": "Obter Desconto"
+  },
+  "contact": {
+    "highlight": "Fale",
+    "heading": "Conosco",
+    "subtitle": "Entre em contato para dúvidas, sugestões ou parcerias.",
+    "email": {
+      "title": "Email"
+    },
+    "phone": {
+      "title": "Telefone"
+    },
+    "address": {
+      "title": "Endereço"
+    },
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Digite seu nome",
+      "email": "Email",
+      "emailPlaceholder": "Digite seu email",
+      "message": "Mensagem",
+      "messagePlaceholder": "Digite sua mensagem",
+      "button": "Enviar mensagem"
+    }
   },
   "footer": {
     "description": "Criado para ter alta qualidade e frescor. Nossos produtos são sempre saudáveis.",

@@ -12,91 +12,90 @@ import Lamb from '../../assets/lamb.png'
 import YellowTail from '../../assets/yellowtail.png'
 
 const products = [
-    {
-        id: 1,
-        title: 'Eggs',
-        price: 2.05,
-        category: 'Meat',
-        image: Eggs
-    },
-    {
-        id: 2,
-        title: 'Beef',
-        price: 2.05,
-        category: 'Meat',
-        image: Beef
-    },
-    {
-        id: 3,
-        title: 'Chicken Breast',
-        price: 2.05,
-        category: 'Meat',
-        image: ChickenBreast
-    },
-    {
-        id: 4,
-        title: 'Goat',
-        price: 2.05,
-        category: 'Meat',
-        image: Goat
-    },
-    {
-        id: 5,
-        title: 'Lamb',
-        price: 2.05,
-        category: 'Meat',
-        image: Lamb
-    },
-    {
-        id: 6,
-        title: 'Salmon',
-        price: 2.05,
-        category: 'SeaFood',
-        image: Salmon
-    },
-    {
-        id: 7,
-        title: 'Shrimp',
-        price: 2.05,
-        category: 'SeaFood',
-        image: Shrimp
-    },
-    {
-        id: 8,
-        title: 'Tilapia',
-        price: 2.05,
-        category: 'SeaFood',
-        image: Tilapia
-    },
-    {
-        id: 9,
-        title: 'Tuna',
-        price: 2.05,
-        category: 'SeaFood',
-        image: Tuna
-    },
-    {
-        id: 10,
-        title: 'Cod',
-        price: 2.05,
-        category: 'SeaFood',
-        image: Cod
-    },
-    {
-        id: 11,
-        title: 'Yellowtail',
-        price: 2.05,
-        category: 'SeaFood',
-        image: YellowTail
-    },
-    {
-        id: 12,
-        title: 'Turkey',
-        price: 2.05,
-        category: 'Meat',
-        image: Turkey
-    },
-
+  {
+    id: 1,
+    title: 'Eggs',
+    price: 2.05,
+    category: 'meat',      // ✅
+    image: Eggs
+  },
+  {
+    id: 2,
+    title: 'Beef',
+    price: 2.05,
+    category: 'meat',
+    image: Beef
+  },
+  {
+    id: 3,
+    title: 'Chicken Breast',
+    price: 2.05,
+    category: 'meat',
+    image: ChickenBreast
+  },
+  {
+    id: 4,
+    title: 'Goat',
+    price: 2.05,
+    category: 'meat',
+    image: Goat
+  },
+  {
+    id: 5,
+    title: 'Lamb',
+    price: 2.05,
+    category: 'meat',
+    image: Lamb
+  },
+  {
+    id: 6,
+    title: 'Salmon',
+    price: 2.05,
+    category: 'seafood',   // ✅
+    image: Salmon
+  },
+  {
+    id: 7,
+    title: 'Shrimp',
+    price: 2.05,
+    category: 'seafood',
+    image: Shrimp
+  },
+  {
+    id: 8,
+    title: 'Tilapia',
+    price: 2.05,
+    category: 'seafood',
+    image: Tilapia
+  },
+  {
+    id: 9,
+    title: 'Tuna',
+    price: 2.05,
+    category: 'seafood',
+    image: Tuna
+  },
+  {
+    id: 10,
+    title: 'Cod',
+    price: 2.05,
+    category: 'seafood',
+    image: Cod
+  },
+  {
+    id: 11,
+    title: 'Yellowtail',
+    price: 2.05,
+    category: 'seafood',
+    image: YellowTail
+  },
+  {
+    id: 12,
+    title: 'Turkey',
+    price: 2.05,
+    category: 'meat',
+    image: Turkey
+  }
 ]
 
 export default products

@@ -28,7 +28,7 @@ const Process = () => {
     })
 
     return (
-        <section>
+        <section className="pt-[12vh] md:pt-[14vh]">
             <div className='max-w-[1400px] mx-auto px-10 py-20'>
                 <div className='w-fit mr-auto'>
                     <Heading highlight={t("process.highlight")} heading={t("process.heading")} />

@@ -17,7 +17,7 @@ const Hero = () => {
                         {t("hero.title1")}
                         <span className='text-black'> {t("hero.title2")} </span>
                         <span className='text-black'> {t("hero.title3")} </span>
-                        <br /> In Your City
+                        <br /> {t("hero.title4")}
                     </h1>
                     <p className='text-zinc-600 md:text-lg text-md max-w-[530px] mt-5 mb-10'>
                         {t("hero.subtitle")}
