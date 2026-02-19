@@ -19,7 +19,7 @@ This project focuses on clean UI design, component scalability, and a structured
 ---
 
 📁 Project Structure
-
+```bash
 src/
 │
 ├── assets/
@@ -54,6 +54,7 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── index.css
+```
 
 The project follows a component-based architecture, making it scalable and easy to maintain.
 
