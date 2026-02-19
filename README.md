@@ -1,17 +1,93 @@
-# React + Vite
+🐟 SeaFood E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce frontend for meats and seafood built with React, Vite, and TailwindCSS, featuring multilingual support using i18next.
 
-Currently, two official plugins are available:
+This project focuses on clean UI design, component scalability, and a structured architecture suitable for real-world e-commerce platforms.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Tech Stack
 
-## React Compiler
+⚛️ React 19
+⚡ Vite
+🎨 TailwindCSS 4
+🌍 i18next
+🔀 React Router DOM
+🎞️ Swiper (Carousels)
+🎨 React Icons
+🧹 ESLint
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# seacardo
+📁 Project Structure
+
+src/
+│
+├── assets/
+├── components/
+│   ├── AllProducts/
+│   ├── Banner/
+│   ├── Button/
+│   ├── Cards/
+│   ├── Category/
+│   ├── CategoryPage/
+│   ├── Contact/
+│   ├── Dairy/
+│   ├── Discount/
+│   ├── Footer/
+│   ├── Fruits/
+│   ├── Heading/
+│   ├── Hero/
+│   ├── Home/
+│   ├── Layout/
+│   ├── Meats/
+│   ├── Navbar/
+│   ├── Process/
+│   ├── ProductList/
+│   ├── Products/
+│   ├── SeaFood/
+│   └── Values/
+│
+├── i18n/
+│   ├── en.json
+│   └── pt.json
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+
+The project follows a component-based architecture, making it scalable and easy to maintain.
+
+---
+
+🌍 Internationalization
+
+This project supports multiple languages using i18next.
+Available translations:
+
+🇺🇸 English (en.json)
+🇧🇷 Portuguese (pt.json)
+
+The structure allows easy addition of new languages.
+
+---
+
+🛠️ Getting Started
+1️⃣ Clone the repository
+
+git clone https://github.com/your-username/seafood-ecommerce.git
+
+2️⃣ Navigate to the project folder
+
+cd seafood-ecommerce
+
+3️⃣ Install dependencies
+
+npm install
+
+4️⃣ Run development server
+
+npm run dev
+
+The app will be available at:
+
+http://localhost:5173
