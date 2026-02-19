@@ -73,20 +73,25 @@ The structure allows easy addition of new languages.
 
 🛠️ Getting Started
 1️⃣ Clone the repository
-
+```bash
 git clone https://github.com/your-username/seafood-ecommerce.git
+```
 
 2️⃣ Navigate to the project folder
 
+```bash
 cd seafood-ecommerce
+```
 
 3️⃣ Install dependencies
-
+```bash
 npm install
+```
 
 4️⃣ Run development server
-
+```bash
 npm run dev
+```
 
 The app will be available at:
 
