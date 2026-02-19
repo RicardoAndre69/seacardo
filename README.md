@@ -1,10 +1,10 @@
-🐟 SeaFood E-Commerce
+## 🐟 SeaFood E-Commerce
 
 A modern e-commerce frontend for meats and seafood built with React, Vite, and TailwindCSS, featuring multilingual support using i18next.
 
 This project focuses on clean UI design, component scalability, and a structured architecture suitable for real-world e-commerce platforms.
 
-🚀 Tech Stack
+## 🚀 Tech Stack
 
 ⚛️ React 19
 ⚡ Vite
@@ -18,7 +18,7 @@ This project focuses on clean UI design, component scalability, and a structured
 
 ---
 
-📁 Project Structure
+## 📁 Project Structure
 ```bash
 src/
 │
@@ -60,7 +60,7 @@ The project follows a component-based architecture, making it scalable and easy 
 
 ---
 
-🌍 Internationalization
+## 🌍 Internationalization
 
 This project supports multiple languages using i18next.
 Available translations:
@@ -72,7 +72,7 @@ The structure allows easy addition of new languages.
 
 ---
 
-🛠️ Getting Started
+## 🛠️ Getting Started
 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/your-username/seafood-ecommerce.git
