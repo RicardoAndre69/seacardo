@@ -6,14 +6,14 @@ This project focuses on clean UI design, component scalability, and a structured
 
 ## 🚀 Tech Stack
 
-⚛️ React 19
-⚡ Vite
-🎨 TailwindCSS 4
-🌍 i18next
-🔀 React Router DOM
-🎞️ Swiper (Carousels)
-🎨 React Icons
-🧹 ESLint
+- ⚛️ React 19
+- ⚡ Vite
+- 🎨 TailwindCSS 4
+- 🌍 i18next
+- 🔀 React Router DOM
+- 🎞️ Swiper (Carousels)
+- 🎨 React Icons
+- 🧹 ESLint
 
 
 ---
