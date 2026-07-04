@@ -15,13 +15,15 @@ const products = [
   {
     id: 1,
     title: 'Eggs',
+    titleKey: 'products.list.eggs',
     price: 2.05,
-    category: 'meat',      // ✅
+    category: 'meat',
     image: Eggs
   },
   {
     id: 2,
     title: 'Beef',
+    titleKey: 'products.list.beef',
     price: 2.05,
     category: 'meat',
     image: Beef
@@ -29,6 +31,7 @@ const products = [
   {
     id: 3,
     title: 'Chicken Breast',
+    titleKey: 'products.list.chickenBreast',
     price: 2.05,
     category: 'meat',
     image: ChickenBreast
@@ -36,6 +39,7 @@ const products = [
   {
     id: 4,
     title: 'Goat',
+    titleKey: 'products.list.goat',
     price: 2.05,
     category: 'meat',
     image: Goat
@@ -43,6 +47,7 @@ const products = [
   {
     id: 5,
     title: 'Lamb',
+    titleKey: 'products.list.lamb',
     price: 2.05,
     category: 'meat',
     image: Lamb
@@ -50,13 +55,15 @@ const products = [
   {
     id: 6,
     title: 'Salmon',
+    titleKey: 'products.list.salmon',
     price: 2.05,
-    category: 'seafood',   // ✅
+    category: 'seafood',
     image: Salmon
   },
   {
     id: 7,
     title: 'Shrimp',
+    titleKey: 'products.list.shrimp',
     price: 2.05,
     category: 'seafood',
     image: Shrimp
@@ -64,6 +71,7 @@ const products = [
   {
     id: 8,
     title: 'Tilapia',
+    titleKey: 'products.list.tilapia',
     price: 2.05,
     category: 'seafood',
     image: Tilapia
@@ -71,6 +79,7 @@ const products = [
   {
     id: 9,
     title: 'Tuna',
+    titleKey: 'products.list.tuna',
     price: 2.05,
     category: 'seafood',
     image: Tuna
@@ -78,6 +87,7 @@ const products = [
   {
     id: 10,
     title: 'Cod',
+    titleKey: 'products.list.cod',
     price: 2.05,
     category: 'seafood',
     image: Cod
@@ -85,6 +95,7 @@ const products = [
   {
     id: 11,
     title: 'Yellowtail',
+    titleKey: 'products.list.yellowtail',
     price: 2.05,
     category: 'seafood',
     image: YellowTail
@@ -92,6 +103,7 @@ const products = [
   {
     id: 12,
     title: 'Turkey',
+    titleKey: 'products.list.turkey',
     price: 2.05,
     category: 'meat',
     image: Turkey

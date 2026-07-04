@@ -56,7 +56,21 @@
       "meat": "Carnes",
       "seafood": "Frutos do Mar"
     },
-    "viewAll": "Ver Todos"
+    "viewAll": "Ver Todos",
+    "list": {
+      "eggs": "Ovos",
+      "beef": "Carne Bovina",
+      "chickenBreast": "Peito de Frango",
+      "goat": "Cabra",
+      "lamb": "Cordeiro",
+      "salmon": "Salmão",
+      "shrimp": "Camarão",
+      "tilapia": "Tilápia",
+      "tuna": "Atum",
+      "cod": "Bacalhau",
+      "yellowtail": "Peixe-Água-Salada",
+      "turkey": "Peru"
+    }
   },
   "values": {
     "highlight": "Nossos",

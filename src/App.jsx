@@ -7,6 +7,10 @@ import Layout from './components/Layout/Layout'
 import Meats from './components/Meats/Meats'
 import Process from './components/Process/Process'
 import Contact from './components/Contact/Contact'
+import AuthPage from './components/Auth/AuthPage'
+import CartPage from './components/Cart/CartPage'
+import { AuthProvider } from './context/AuthContext'
+import { CartProvider } from './context/CartContext'
 
 const App = () => {
 
@@ -38,12 +42,26 @@ const App = () => {
         {
           path: '/contact',
           element: <Contact />
+        },
+        {
+          path: '/auth',
+          element: <AuthPage />
+        },
+        {
+          path: '/cart',
+          element: <CartPage />
         }
       ]
     },
   ])
 
-  return <RouterProvider router={router} />
+  return (
+    <AuthProvider>
+      <CartProvider>
+        <RouterProvider router={router} />
+      </CartProvider>
+    </AuthProvider>
+  )
 }
 
 export default App

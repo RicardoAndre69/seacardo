@@ -4,10 +4,12 @@ import ProductList from '../ProductList/ProductList'
 import Cards from '../Cards/Cards'
 import { Link } from 'react-router-dom'
 import { useTranslation } from "react-i18next"
+import { useCart } from '../../context/CartContext'
 
 const Products = () => {
 
     const { t } = useTranslation()
+    const { addToCart } = useCart()
 
     const categories = ["all", "meat", "seafood"]
 
@@ -22,8 +24,10 @@ const Products = () => {
         <Cards
             key={product.id}
             image={product.image}
-            title={product.title}
+            title={t(product.titleKey, { defaultValue: product.title })}
             price={product.price}
+            product={product}
+            onAddToCart={() => addToCart(product)}
         />
     ))
 

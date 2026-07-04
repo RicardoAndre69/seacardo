@@ -3,14 +3,21 @@ import { GoHeartFill } from "react-icons/go";
 import { HiShoppingBag } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
 import { TbMenu2, TbMenu3 } from "react-icons/tb";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useAuth } from "../../context/AuthContext";
+import { useCart } from "../../context/CartContext";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const { t, i18n } = useTranslation();
+  const { currentUser, logout } = useAuth();
+  const { totalItems } = useCart();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMenu = () => setShowMenu(!showMenu);
 
@@ -24,6 +31,24 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    setSearchQuery(params.get("search") || "");
+  }, [location.search]);
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    const normalizedQuery = searchQuery.trim();
+
+    if (normalizedQuery) {
+      navigate(`/allproducts?search=${encodeURIComponent(normalizedQuery)}`);
+    } else {
+      navigate("/allproducts");
+    }
+
+    setShowMenu(false);
+  };
 
   return (
     <header
@@ -66,19 +91,41 @@ const Navbar = () => {
         <div className="flex items-center gap-x-5">
           
           {/* Search Desktop */}
-          <div className="hidden md:flex p-1 border-2 border-red-500 rounded-full">
+          <form onSubmit={handleSearch} className="hidden md:flex p-1 border-2 border-red-500 rounded-full">
             <input
               type="text"
+              value={searchQuery}
+              onChange={(event) => setSearchQuery(event.target.value)}
               placeholder={t("navbar.search")}
               className="flex-1 px-3 focus:outline-none"
             />
-            <button className="bg-gradient-to-b from-red-400 to-red-500 text-white w-10 h-10 rounded-full flex items-center justify-center">
+            <button type="submit" className="bg-gradient-to-b from-red-400 to-red-500 text-white w-10 h-10 rounded-full flex items-center justify-center">
               <IoSearch />
             </button>
-          </div>
+          </form>
 
           <GoHeartFill className="text-2xl text-zinc-800" />
-          <HiShoppingBag className="text-2xl text-zinc-800" />
+          <Link to="/cart" className="relative text-zinc-800">
+            <HiShoppingBag className="text-2xl" />
+            {totalItems > 0 && (
+              <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-red-500 px-1 text-[11px] font-semibold text-white">
+                {totalItems}
+              </span>
+            )}
+          </Link>
+
+          {currentUser ? (
+            <div className="hidden md:flex items-center gap-2 rounded-full bg-zinc-100 px-3 py-2">
+              <span className="text-sm font-semibold text-zinc-700">{currentUser.name}</span>
+              <button onClick={logout} className="text-sm font-semibold text-red-500">
+                Logout
+              </button>
+            </div>
+          ) : (
+            <Link to="/auth" className="hidden md:inline-flex rounded-full bg-red-500 px-4 py-2 text-sm font-semibold text-white">
+              Login
+            </Link>
+          )}
 
           {/* Language buttons (desktop) */}
           <div className="hidden md:flex gap-2 ml-4">
@@ -141,16 +188,36 @@ const Navbar = () => {
           </li>
 
           {/* Search Mobile */}
-          <div className="flex p-1 border-2 border-orange-500 rounded-full">
+          <form onSubmit={handleSearch} className="flex p-1 border-2 border-orange-500 rounded-full">
             <input
               type="text"
+              value={searchQuery}
+              onChange={(event) => setSearchQuery(event.target.value)}
               placeholder={t("navbar.search")}
               className="flex-1 px-3 focus:outline-none"
             />
-            <button className="bg-gradient-to-b from-orange-400 to-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center">
+            <button type="submit" className="bg-gradient-to-b from-orange-400 to-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center">
               <IoSearch />
             </button>
-          </div>
+          </form>
+
+          {currentUser ? (
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-sm font-semibold text-zinc-700">{currentUser.name}</span>
+              <button onClick={() => { logout(); setShowMenu(false); }} className="text-sm font-semibold text-red-500">
+                Logout
+              </button>
+            </div>
+          ) : (
+            <Link to="/auth" onClick={() => setShowMenu(false)} className="rounded-full bg-red-500 px-4 py-2 text-sm font-semibold text-white">
+              Login
+            </Link>
+          )}
+
+          <Link to="/cart" onClick={() => setShowMenu(false)} className="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-zinc-700">
+            <HiShoppingBag className="text-lg" />
+            Cart ({totalItems})
+          </Link>
 
           {/* Language buttons (mobile) */}
           <div className="flex gap-3">

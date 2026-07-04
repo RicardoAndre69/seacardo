@@ -78,7 +78,21 @@
       "meat": "Meat",
       "seafood": "SeaFood"
     },
-    "viewAll": "View All"
+    "viewAll": "View All",
+    "list": {
+      "eggs": "Eggs",
+      "beef": "Beef",
+      "chickenBreast": "Chicken Breast",
+      "goat": "Goat",
+      "lamb": "Lamb",
+      "salmon": "Salmon",
+      "shrimp": "Shrimp",
+      "tilapia": "Tilapia",
+      "tuna": "Tuna",
+      "cod": "Cod",
+      "yellowtail": "Yellowtail",
+      "turkey": "Turkey"
+    }
   },
   "discount": {
     "title": "First Order Discount!",
