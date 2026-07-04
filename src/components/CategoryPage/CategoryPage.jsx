@@ -40,13 +40,13 @@ const CategoryPage = ({title, bgImage, categories=[]}) => {
   return (
     <div>
         <Banner title={title} bgImage={bgImage}/>
-        <div className='max-w-[1400px] mx-auto px-10 py-20'>
+        <div className='max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-10 py-20'>
             {searchTerm && (
                 <p className='mb-6 text-lg text-zinc-600'>Showing results for: <span className='font-semibold text-zinc-800'>"{searchTerm}"</span></p>
             )}
 
             {filteredItems.length > 0 ? (
-                <div className='grid grid-cols-1 md:grid-cols-4 gap-9'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-9'>
                     {renderProduct}
                 </div>
             ) : (

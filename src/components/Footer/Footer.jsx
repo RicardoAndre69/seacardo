@@ -19,7 +19,7 @@ const Footer = () => {
                     </p>
 
                     <p className='text-zinc-800 mt-6'>
-                        2025 &copy; {t("footer.rights")}
+                        2026&copy; {t("footer.rights")}
                     </p>
                 </div>
 

@@ -56,7 +56,7 @@ const Navbar = () => {
         isScrolled ? "drop-shadow-[0_4px_25px_rgba(0,0,0,0.1)]" : ""
       }`}
     >
-      <nav className="max-w-[1400px] mx-auto px-10 md:h-[14vh] h-[12vh] flex justify-between items-center">
+      <nav className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-10 min-h-[12vh] md:min-h-[14vh] py-3 flex justify-between items-center gap-3">
         
         {/* Logo */}
         <Link to="/" className="text-3xl font-bold">
@@ -64,7 +64,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-x-12">
+        <ul className="hidden lg:flex items-center gap-x-6 lg:gap-x-10">
           <li>
             <Link to="/" className="font-semibold text-red-500">
               {t("navbar.home")}
@@ -88,18 +88,18 @@ const Navbar = () => {
         </ul>
 
         {/* Icons + Search */}
-        <div className="flex items-center gap-x-5">
+        <div className="flex items-center gap-x-3 sm:gap-x-4 lg:gap-x-5">
           
           {/* Search Desktop */}
-          <form onSubmit={handleSearch} className="hidden md:flex p-1 border-2 border-red-500 rounded-full">
+          <form onSubmit={handleSearch} className="hidden lg:flex items-center border-2 border-red-500 rounded-full w-44 lg:w-56 overflow-hidden">
             <input
               type="text"
               value={searchQuery}
               onChange={(event) => setSearchQuery(event.target.value)}
               placeholder={t("navbar.search")}
-              className="flex-1 px-3 focus:outline-none"
+              className="flex-1 px-3 py-2 text-sm focus:outline-none"
             />
-            <button type="submit" className="bg-gradient-to-b from-red-400 to-red-500 text-white w-10 h-10 rounded-full flex items-center justify-center">
+            <button type="submit" className="bg-gradient-to-b from-red-400 to-red-500 text-white w-10 h-10 flex items-center justify-center shrink-0">
               <IoSearch />
             </button>
           </form>
@@ -115,20 +115,20 @@ const Navbar = () => {
           </Link>
 
           {currentUser ? (
-            <div className="hidden md:flex items-center gap-2 rounded-full bg-zinc-100 px-3 py-2">
+            <div className="hidden lg:flex items-center gap-2 rounded-full bg-zinc-100 px-3 py-2">
               <span className="text-sm font-semibold text-zinc-700">{currentUser.name}</span>
               <button onClick={logout} className="text-sm font-semibold text-red-500">
                 Logout
               </button>
             </div>
           ) : (
-            <Link to="/auth" className="hidden md:inline-flex rounded-full bg-red-500 px-4 py-2 text-sm font-semibold text-white">
+            <Link to="/auth" className="hidden lg:inline-flex rounded-full bg-red-500 px-4 py-2 text-sm font-semibold text-white">
               Login
             </Link>
           )}
 
           {/* Language buttons (desktop) */}
-          <div className="hidden md:flex gap-2 ml-4">
+          <div className="hidden lg:flex gap-2 ml-4">
             <button
               onClick={() => changeLanguage("pt")}
               className={`px-3 py-1 rounded-full border ${
@@ -154,7 +154,7 @@ const Navbar = () => {
           {/* Hamburger */}
           <button
             onClick={toggleMenu}
-            className="md:hidden text-3xl text-zinc-800"
+            className="flex lg:hidden text-3xl text-zinc-800"
           >
             {showMenu ? <TbMenu3 /> : <TbMenu2 />}
           </button>
@@ -162,7 +162,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <ul
-          className={`md:hidden flex flex-col gap-y-8 bg-orange-500/15 backdrop-blur-xl shadow-xl rounded-xl p-10 items-center absolute top-28 transition-all duration-500 ${
+          className={`flex lg:hidden flex-col gap-y-8 bg-orange-500/15 backdrop-blur-xl shadow-xl rounded-xl p-10 items-center absolute top-28 transition-all duration-500 ${
             showMenu ? "left-1/2 -translate-x-1/2" : "-left-full"
           }`}
         >
@@ -188,15 +188,15 @@ const Navbar = () => {
           </li>
 
           {/* Search Mobile */}
-          <form onSubmit={handleSearch} className="flex p-1 border-2 border-orange-500 rounded-full">
+          <form onSubmit={handleSearch} className="flex items-center border-2 border-orange-500 rounded-full overflow-hidden">
             <input
               type="text"
               value={searchQuery}
               onChange={(event) => setSearchQuery(event.target.value)}
               placeholder={t("navbar.search")}
-              className="flex-1 px-3 focus:outline-none"
+              className="flex-1 px-3 py-2 focus:outline-none"
             />
-            <button type="submit" className="bg-gradient-to-b from-orange-400 to-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center">
+            <button type="submit" className="bg-gradient-to-b from-orange-400 to-orange-500 text-white w-10 h-10 flex items-center justify-center shrink-0">
               <IoSearch />
             </button>
           </form>

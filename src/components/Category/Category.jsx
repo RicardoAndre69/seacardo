@@ -10,9 +10,9 @@ const Category = () => {
 
     const renderCards = category.map(card => {
         return (
-            <div className="basis-[300px]" key={card.id}>
-                <div className="w-full min-h-[30vh] relative -mb-10">
-                    <img src={card.image} className="absolute bottom-0" />
+            <div className="w-full max-w-[320px] basis-[280px] lg:basis-[300px]" key={card.id}>
+                <div className="w-full min-h-[24vh] lg:min-h-[30vh] relative -mb-10">
+                    <img src={card.image} className="absolute bottom-0 w-full h-auto object-contain" />
                 </div>
 
                 <div className="bg-zinc-100 pt-17 p-8 rounded-xl">
@@ -33,7 +33,7 @@ const Category = () => {
 
     return (
         <section>
-            <div className='max-w-[1400px] mx-auto px-10 py-20'>
+            <div className='max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-10 py-20'>
                 <Heading highlight={t("category.highlight")} heading={t("category.heading")} />
 
                 <div className="flex flex-wrap gap-10 md:mt-15 justify-center">

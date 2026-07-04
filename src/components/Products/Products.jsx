@@ -33,7 +33,7 @@ const Products = () => {
 
     return (
         <section >
-            <div className='max-w-[1400px] mx-auto px-10 py-20'>
+            <div className='max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-10 py-20'>
                 
                 <Heading 
                     highlight={t("products.highlight")} 
@@ -58,7 +58,7 @@ const Products = () => {
                 </div>
 
                 {/* Product Listing */}
-                <div className='grid grid-cols-1 md:grid-cols-4 gap-9 mt-20'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-9 mt-20'>
                     {renderCards}
                 </div>
 
