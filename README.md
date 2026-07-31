@@ -178,6 +178,6 @@ The frontend will be available at:
 http://localhost:5173
 ```
 
-📄 License
+# 📄 License
 
 This project is for study and portfolio purposes.
